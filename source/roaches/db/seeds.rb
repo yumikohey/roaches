@@ -5,19 +5,19 @@ Business.create(
 	business_id: 10,
 	name: "Tiramisu Kitchen",
 	address: "33 Belden Pl",
-	zip_code: 94104,
+	postal_code: 94104,
 	latitude: 37.791116,
 	longitude: -122.403816
 	)
 
 Inspection.create(
 	business_id: 10,
-	inspec_date: '2014-08-07'
+	date: '2014-08-07'
 )
 
 Violation.create(
 	business_id: 10,
-	violation_date: '2014-07-29',
+	date: '2014-07-29',
 	risk_category: 'Low Risk',
 	description: 'Unapproved or unmaintained equipment or utensils'
 )
@@ -29,20 +29,20 @@ Business.create(
 	name: "GEORGE'S COFFEE SHOP",
 	address: "2200 OAKDALE Ave",
 	owner_name: 'LIEUW, VICTOR & CHRISTINA C',
-	zip_code: 94124,
+	postal_code: 94124,
 	latitude: 37.741086,
 	longitude: -122.401737,
-	phone: '14155531470'
+	phone_number: '14155531470'
 	)
 
 Inspection.create(
 	business_id: 17,
-	inspec_date: '2014-04-25'
+	date: '2014-04-25'
 )
 
 Violation.create(
 	business_id: 17,
-	violation_date: '2014-03-12',
+	date: '2014-03-12',
 	risk_category: 'Low Risk',
 	description: ['Unapproved or unmaintained equipment or utensils',
 				  'Unclean nonfood contact surfaces',
@@ -56,20 +56,20 @@ Business.create(
 	name: "Nrgize Lifestyle Cafe",
 	address: "1200 Van Ness Ave, 3rd Floor",
 	owner_name: '24 Hour Fitness Inc',
-	zip_code: 94109,
+	postal_code: 94109,
 	latitude: 37.786848,
 	longitude: -122.421547,
 	)
 
 Inspection.create(
 	business_id: 19,
-	inspec_date: '2014-11-10',
+	date: '2014-11-10',
 	score: 94
 )
 
 Violation.create(
 	business_id: 19,
-	violation_date: '2014-11-10',
+	date: '2014-11-10',
 	risk_category: 'Moderate Risk',
 	description: ['Inadequate food safety knowledge or lack of certified food safety manager',
 				  'Improper storage of equipment utensils or linens'
