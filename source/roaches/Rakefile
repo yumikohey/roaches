@@ -38,15 +38,15 @@ end
 
 desc "populate the test database with sample data"
 task "db:populate" do
-  # BusinessesImporter.import
-  # ViolationsImporter.import
+  BusinessesImporter.import
+  ViolationsImporter.import
   InspectionsImporter.import
 end
 
 desc 'Retrieves the current schema version number'
 task "db:version" do
   puts "Current version: #{ActiveRecord::Migrator.current_version}"
-end
+end1
 
 
 desc 'Start IRB with application environment loaded'
