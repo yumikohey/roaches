@@ -2,11 +2,12 @@ class CreateViolations < ActiveRecord::Migration
 
 	def change
 		create_table :violations do |t|
-			t.date :violation_date
+			t.date :date
 			t.string :risk_category
 			t.string :description
-			t.belongs_to :business
-			
+			t.integer :business_id
+			t.integer :violation_type_id
+
 			t.timestamps
 		end
 	end
