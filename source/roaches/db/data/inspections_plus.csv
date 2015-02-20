@@ -1,4 +1,4 @@
-business_id,Score,date,type
+business_id,score,date,inspect_type
 10,,"20140807","Reinspection/Followup"
 10,94,"20140729","Routine - Unscheduled"
 10,,"20140124","Reinspection/Followup"

@@ -39,7 +39,7 @@ end
 desc "populate the test database with sample data"
 task "db:populate" do
   # BusinessesImporter.import
-  ViolationsImporter.import
+  # ViolationsImporter.import
   InspectionsImporter.import
 end
 
