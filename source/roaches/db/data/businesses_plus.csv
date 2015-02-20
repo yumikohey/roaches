@@ -1,4 +1,4 @@
-"business_id","name","address","city","postal_code","latitude","longitude","phone_number","TaxCode","business_certificate","application_date","owner_name","owner_address","owner_city","owner_state","owner_zip"
+business_id,name,address,city,postal_code,latitude,longitude,phone_number,TaxCode,business_certificate,application_date,owner_name,owner_address,owner_city,owner_state,owner_zip
 10,"Tiramisu Kitchen","033 Belden Pl","San Francisco","94104","37.791116","-122.403816","","H24",779059,"","Tiramisu LLC","33 Belden St","San Francisco","CA","94104"
 17,"GEORGE'S COFFEE SHOP","2200 OAKDALE Ave ","S.F.","94124","37.741086","-122.401737","+14155531470","H24",78443,"04/05/1975","LIEUW, VICTOR & CHRISTINA C","648 MACARTHUR DRIVE","DALY CITY","CA","94015"
 19,"Nrgize Lifestyle Cafe","1200 Van Ness Ave, 3rd Floor","San Francisco","94109","37.786848","-122.421547","","H24",,"","24 Hour Fitness Inc","1200 Van Ness Ave, 3rd Floor","San Francisco","CA","94109"

@@ -2,6 +2,10 @@ require 'pathname'
 require 'sqlite3'
 require 'active_record'
 require 'logger'
+require_relative '../lib/inspections_importer'
+require_relative '../lib/businesses_importer'
+require_relative '../lib/violations_importer'
+
 
 require_relative '../app/controllers/controller'
 require_relative '../app/view/view'
