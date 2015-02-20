@@ -5,7 +5,7 @@ class CreateInspections < ActiveRecord::Migration
 			t.integer :score
 			t.date :date
       t.integer :business_id
-      t.string :type
+      t.string :inspect_type
 
 			t.timestamps
 		end
