@@ -4,7 +4,7 @@ class CreateViolations < ActiveRecord::Migration
 		create_table :violations do |t|
 			t.date :date
 			t.string :risk_category
-			t.string :description
+			t.string :description, null: true
 			t.integer :business_id
 			t.integer :violation_type_id
 
