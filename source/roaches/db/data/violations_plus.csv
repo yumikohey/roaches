@@ -1,4 +1,4 @@
-"business_id","date","ViolationTypeID","risk_category","description"
+business_id,date,violation_type_id,risk_category,description
 10,"20140729",103144,"Low Risk","Unapproved or unmaintained equipment or utensils"
 10,"20140729",103129,"Moderate Risk","Insufficient hot water or running water"
 10,"20121114",103154,"Low Risk","Unclean or degraded floors walls or ceilings"

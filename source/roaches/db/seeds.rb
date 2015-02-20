@@ -2,7 +2,7 @@ require_relative '../spec/spec_helper'
 
 # business #10
 Business.create(
-	business_id: 10,
+	assign_biz_id: 10,
 	name: "Tiramisu Kitchen",
 	address: "33 Belden Pl",
 	postal_code: 94104,
@@ -25,7 +25,7 @@ Violation.create(
 # business #17
 
 Business.create(
-	business_id: 17,
+	assign_biz_id: 17,
 	name: "GEORGE'S COFFEE SHOP",
 	address: "2200 OAKDALE Ave",
 	owner_name: 'LIEUW, VICTOR & CHRISTINA C',
@@ -52,7 +52,7 @@ Violation.create(
 #business #19
 
 Business.create(
-	business_id: 19,
+	assign_biz_id: 19,
 	name: "Nrgize Lifestyle Cafe",
 	address: "1200 Van Ness Ave, 3rd Floor",
 	owner_name: '24 Hour Fitness Inc',

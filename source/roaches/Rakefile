@@ -1,7 +1,7 @@
 require 'rake'
 require 'rspec/core/rake_task'
-
 require_relative 'config/application'
+
 
 desc "create the database"
 task "db:create" do
@@ -36,16 +36,18 @@ task "db:rollback" do
   Rake::Task['db:version'].invoke if Rake::Task['db:version']
 end
 
+desc "populate the test database with sample data"
+task "db:populate" do
+  # BusinessesImporter.import
+  ViolationsImporter.import
+  InspectionsImporter.import
+end
 
 desc 'Retrieves the current schema version number'
 task "db:version" do
   puts "Current version: #{ActiveRecord::Migrator.current_version}"
 end
 
-desc 'import csv files'
-task "db:csvImporter" do
-  
-end
 
 desc 'Start IRB with application environment loaded'
 task "console" do
