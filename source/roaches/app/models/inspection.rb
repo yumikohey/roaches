@@ -1,2 +1,3 @@
-class Inspection<ActiveRecord::Base
+class Inspection < ActiveRecord::Base
+	belongs_to :business
 end

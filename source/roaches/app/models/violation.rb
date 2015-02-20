@@ -1,2 +1,3 @@
-class Violation<ActiveRecord::Base
+class Violation < ActiveRecord::Base
+	belongs_to :business
 end
