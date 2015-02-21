@@ -27,7 +27,7 @@ module RoachFinderController
 
   def self.find_top_roaches(zipcode)
     violators_array = []
-    businesses_in_this_area = Business.where(postal_code: zipcode)
+    businesses_in_this_area = Business.where(postal_code: zipcode).limit 10
     businesses_in_this_area.pluck(:name).each {|violator|
       violators_array << violator
     }
@@ -47,5 +47,4 @@ module RoachFinderController
   #     violators_array << violator
   #   }
 
-  end
 end
