@@ -31,10 +31,21 @@ module RoachFinderController
     businesses_in_this_area.pluck(:name).each {|violator|
       violators_array << violator
     }
-    violators_array.uniq.each {|violator|
-      puts "Top violators: "
-      puts "\e[31m#{violator}\e[0m"
+    puts "Top violators: "
+    violators_array.uniq.each_with_index {|violator, index|
+
+      puts "\e[31m #{index+1}. #{violator} \e[0m"
+
     }
     run
+  end
+
+  # def self.find_latest_roaches(zipcode)
+  #   violators_array = []
+  #   businesses_in_this_area = Business.where(postal_code: zipcode)
+  #   businesses_in_this_area.pluck(:name).each {|violator|
+  #     violators_array << violator
+  #   }
+
   end
 end
