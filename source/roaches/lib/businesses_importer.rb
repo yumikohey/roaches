@@ -10,6 +10,9 @@ module BusinessesImporter
         ic = Iconv.new('UTF-8//IGNORE', 'UTF-8')
         valid_line = ic.iconv(line)
         data = valid_line.chomp.split(',')
+        data.each do |string|
+          string.gsub!('["]',"")
+        end
         if field_names.nil?
           field_names = data
         else

@@ -20,8 +20,9 @@ module RoachFinderController
 
   def self.roach_rating(business_name)
     violator_id = Business.where(name: business_name).first.business_id
-    puts "\e[31mRisk Category: #{Violation.where(business_id: violator_id).first.risk_category}\e[0m"
-    puts "\e[33mDescription: #{Violation.where(business_id: violator_id).first.description}\e[0m"
+    the_uniq = Violation.find_latest_violation(violator_id)
+    puts "\e[31mRisk Category: #{the_uniq.risk_category}\e[0m"
+    puts "\e[33mDescription: #{the_uniq.description}\e[0m"
     run
   end
 
@@ -31,10 +32,11 @@ module RoachFinderController
     businesses_in_this_area.pluck(:name).each {|violator|
       violators_array << violator
     }
-    violators_array.uniq.each {|violator|
-      puts "Top violators: "
-      puts "\e[31m#{violator}\e[0m"
+    puts "Top violators: "
+    violators_array.uniq.each_with_index {|violator, index|
+      puts "\e[31m #{index+1}. #{violator}\e[0m"
     }
     run
   end
+
 end
