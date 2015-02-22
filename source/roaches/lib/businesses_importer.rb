@@ -23,6 +23,7 @@ module BusinessesImporter
             string.gsub!(/["]/,"")
           end
         end
+        
         if field_names.nil?
           field_names = data
         else
