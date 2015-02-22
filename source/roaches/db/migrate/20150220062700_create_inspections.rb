@@ -4,8 +4,8 @@ class CreateInspections < ActiveRecord::Migration
 		create_table :inspections do |t|
 			t.integer :score
 			t.date :date
-      t.integer :business_id
-      t.string :inspect_type
+		    t.integer :business_id
+		    t.string :inspect_type
 
 			t.timestamps
 		end

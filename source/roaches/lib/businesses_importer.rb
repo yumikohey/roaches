@@ -10,8 +10,18 @@ module BusinessesImporter
         ic = Iconv.new('UTF-8//IGNORE', 'UTF-8')
         valid_line = ic.iconv(line)
         data = valid_line.chomp.split(',')
+        data.each_with_index do |x, idx|
+          if x.start_with?(" ")
+            data[idx-1] = data[idx-1] + x
+            data.delete(x)
+          end
+        end
         data.each do |string|
-          string.gsub!(/["]/,"")
+          if string =~ /\d{10,}/
+            string
+          else
+            string.gsub!(/["]/,"")
+          end
         end
         if field_names.nil?
           field_names = data
